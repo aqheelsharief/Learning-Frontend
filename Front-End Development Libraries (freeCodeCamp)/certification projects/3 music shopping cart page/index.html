@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Store Cart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-white min-h-screen p-6">
+
+  <header class="max-w-6xl mx-auto mb-10">
+    <h1 class="text-3xl font-bold text-green-400">♪ SoundSpace</h1>
+    <p class="text-slate-400 mt-2">Your music, your collection.</p>
+  </header>
+
+  <main id="shopping-cart-container"
+    class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8">
+
+    <section id="products-container" class="flex-1 space-y-5">
+
+      <h2 class="text-2xl font-bold mb-6">Your Cart</h2>
+
+      <div class="card bg-slate-900 border border-slate-800 rounded-xl p-5 flex flex-col sm:flex-row items-center gap-5">
+
+        <div class="w-24 h-24 bg-white rounded-lg flex items-center justify-center text-4xl">
+          🎧
+        </div>
+
+        <div class="flex-1 text-center sm:text-left">
+          <h2 class="text-xl font-semibold">Sony WH-1000XM5</h2>
+          <p class="text-slate-400 text-sm mt-1">Wireless Noise Cancelling Headphones</p>
+          <p class="quantity text-sm text-purple-400 mt-2">Quantity: 1</p>
+        </div>
+
+        <div class="text-center sm:text-right">
+          <p class="price text-lg font-bold mb-3">$349.99</p>
+          <button class="remove-button bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg text-sm transition">
+            Remove
+          </button>
+        </div>
+
+      </div>
+
+      <div class="card bg-slate-900 border border-slate-800 rounded-xl p-5 flex flex-col sm:flex-row items-center gap-5">
+
+        <div class="w-24 h-24 bg-white rounded-lg flex items-center justify-center text-4xl">
+          🔊
+        </div>
+
+        <div class="flex-1 text-center sm:text-left">
+          <h2 class="text-xl font-semibold">JBL Flip 6</h2>
+          <p class="text-slate-400 text-sm mt-1">Portable Bluetooth Speaker</p>
+          <p class="quantity text-sm text-purple-400 mt-2">Quantity: 2</p>
+        </div>
+
+        <div class="text-center sm:text-right">
+          <p class="price text-lg font-bold mb-3">$129.99 each</p>
+          <button class="remove-button bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg text-sm transition">
+            Remove
+          </button>
+        </div>
+
+      </div>
+
+      <div class="card bg-slate-900 border border-slate-800 rounded-xl p-5 flex flex-col sm:flex-row items-center gap-5">
+
+        <div class="w-24 h-24 bg-white rounded-lg flex items-center justify-center text-4xl">
+          🎵
+        </div>
+
+        <div class="flex-1 text-center sm:text-left">
+          <h2 class="text-xl font-semibold">Audio-Technica LP60X</h2>
+          <p class="text-slate-400 text-sm mt-1">Automatic Belt-Drive Turntable</p>
+          <p class="quantity text-sm text-purple-400 mt-2">Quantity: 1</p>
+        </div>
+
+        <div class="text-center sm:text-right">
+          <p class="price text-lg font-bold mb-3">$149.99</p>
+          <button class="remove-button bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg text-sm transition">
+            Remove
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <aside id="order-summary-container"
+      class="lg:w-80 h-fit bg-slate-900 rounded-xl border border-slate-700 p-6">
+
+      <h2 class="text-2xl font-bold mb-6">Order Summary</h2>
+
+      <div class="flex justify-between items-center mb-4">
+        <span id="total" class="font-semibold text-lg">Total:</span>
+        <span id="total-amount" class="text-xl font-bold text-purple-400">$759.96</span>
+      </div>
+
+      <p class="text-slate-400 text-sm mb-6">
+        Shipping and taxes calculated at checkout.
+      </p>
+
+      <a href="#"
+        class="block text-center bg-blue-600 hover:bg-blue-700 py-3 rounded-lg font-semibold transition">
+        Checkout
+      </a>
+
+      <p class="text-center text-slate-500 text-xs mt-4">
+        Secure checkout · Happy listening!
+      </p>
+
+    </aside>
+
+  </main>
+
+</body>
+</html>
