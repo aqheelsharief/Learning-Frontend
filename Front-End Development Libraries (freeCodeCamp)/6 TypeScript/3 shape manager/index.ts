@@ -1,3 +1,5 @@
+export {};
+
 interface Shape {
   type: string;
 }
@@ -84,7 +86,7 @@ const clearInputFields = () => {
   });
 };
 
-function updateResult() {
+function updateResult():void {
   const shape = shapeTypeSelect.value;
   let result: string = "";
 
