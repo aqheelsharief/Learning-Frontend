@@ -1,0 +1,14 @@
+body { font-family: system-ui, sans-serif; background: #1e1b2e; color: #eee; margin: 0; }
+main { max-width: 420px; margin: 2rem auto; padding: 0 1rem; text-align: center; }
+#flashcard { position: relative; height: 200px; margin: 1rem 0; cursor: pointer;
+  perspective: 800px; }
+.face { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  padding: 1rem; border-radius: 12px; backface-visibility: hidden;
+  transition: transform 0.5s; font-size: 1.2rem; }
+.front { background: #7c5cff; }
+.back  { background: #22c1a0; transform: rotateY(180deg); }
+#flashcard.flipped .front { transform: rotateY(180deg); }
+#flashcard.flipped .back  { transform: rotateY(360deg); }
+button { margin: 0.5rem 0; padding: 0.5rem 1rem; border: 0; border-radius: 6px; cursor: pointer; }
+textarea { display: block; width: 100%; box-sizing: border-box; margin: 0.5rem 0; padding: 0.5rem; }
+#error-msg { color: #ff7b7b; min-height: 1.2em; }

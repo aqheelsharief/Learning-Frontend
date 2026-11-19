@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brain Deck</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Brain Deck</h1>
+    <p id="counter"></p>
+
+    <div id="flashcard">
+      <div class="face front" id="card-front"></div>
+      <div class="face back" id="card-back"></div>
+    </div>
+
+    <button id="delete-btn" type="button">Delete card</button>
+
+    <form id="entry-form">
+      <textarea id="front-text" placeholder="Question"></textarea>
+      <textarea id="back-text" placeholder="Answer"></textarea>
+      <p id="error-msg" role="alert"></p>
+      <button type="submit">Add card</button>
+    </form>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
